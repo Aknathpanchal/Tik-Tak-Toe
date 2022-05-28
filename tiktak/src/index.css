@@ -34,15 +34,32 @@ code {
 }
 
 .square{
-  min-width: 100vh;
-  min-height: 100vh;
+  min-width: 20vh;
+  min-height: 20vh;
   font-size: 64px;
   text-align: center;
   color: #1CDBF5;
   font-weight: 30px;
 }
 
+jc-center{
+  justify-content: center;
+}
+
 .b-bottom-right{
+  border-right: 15px solid  #1CDBF5 ;
+  border-bottom: 15px solid  #1CDBF5 ;
+}
+
+.b-bottom{
+  border-bottom: 15px solid  #1CDBF5 ;
+}
+
+.b-right{
   border-right: 15px solid  #1CDBF5 ;
 }
 
+.clear-button{
+  width: max-content;
+  margin: 40px auto 10px auto;
+}

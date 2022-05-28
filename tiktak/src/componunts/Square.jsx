@@ -1,10 +1,13 @@
 import React from "react";
 
 
-function Square() {
+function Square(props) {
+    const classes = props.className ? `${props.className} square` : 'square'
     return (
         <>
-     <span className="square">X</span>
+     <span className={classes} onClick={props.onClick}>
+     {props.state}
+     </span>
      </>
     );
   }
