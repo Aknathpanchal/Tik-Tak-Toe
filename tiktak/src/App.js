@@ -1,6 +1,6 @@
-import './App.css';
 import Square from './componunts/Square';
 import React, {useState, useEffect } from 'react'
+
 
 const initialState=["","","","","","","","","",""]
 
@@ -65,7 +65,8 @@ const checkWinner = () =>{
       <Square className="b-right" state={state[7]} onClick={() => onSquareClicked(7)}/>
       <Square className="" state={state[8]} onClick={() => onSquareClicked(8)}/>
       </div>
-      <button className="clear-button" onClick={()=> setState(initialState)}>Clear Game</button>
+    
+      <button className="clear-button" onClick= {()=> setState(initialState)}>Clear Game</button>
       <p>Shreenath Panchal</p>
     </div>
   );
